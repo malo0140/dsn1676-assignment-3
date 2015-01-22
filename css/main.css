@@ -85,9 +85,17 @@ html {
     0% {
     transform: scale(1,1); 
     }
+    
+    -webkit-50% {
+    transform: scale(.5,.5); 
+    }
+    
+    50% {
+    transform: scale(.5,.5); 
+    }
 
     -webkit-100% {
-        transform: scale(.5,.5);
+        transform: scale(1,1);
     }
     
     100% {
@@ -98,11 +106,15 @@ html {
 }@keyframes scale {
     
     0% {
-    transform: scale(1.0); 
+    transform: scale(1,1); 
+    } 
+    
+    50% {
+    transform: scale(.5,.5); 
     } 
     
     100% {
-        transform: scale(2.0);
+        transform: scale(1,1);
     }
 }
 
